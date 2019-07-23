@@ -1,0 +1,28 @@
+<div class="main" [ngStyle]="{'display': activeModal ? 'fixed' : 'none'}">
+  <div class="relative">
+    <div class="content-box"  [ngStyle]="
+   {
+       'left': left,
+       'top': top,
+       'right': right,
+       'bottom': bottom,
+       'max-height': maxHeight,
+       'max-width': maxWidth,
+       'min-height': minHeight,
+       'min-width': minWidth,
+       'height': height,
+       'width': width,
+       'overflow': overFlow,
+       'overflow-x': overFlowX,
+       'overflow-y': overFlowY,
+       'animation-name':  'zoomIn',
+       'animation-duration': animationDuration,
+       'animation-interval': 'infinite'
+      }" >
+      <!--[ngClass]="{'zoomOut': exitAnimationName==='-zoomOut'}"-->
+      <div class="content" #modalPalace>
+      </div>
+    </div>
+    <div class="overlay" (click)="triggerClose()" *ngIf="!disableClose"></div>
+  </div>
+</div>
