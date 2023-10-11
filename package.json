@@ -9,7 +9,7 @@
   "author": "Abodunrin Afeez Lekan <abodunrinafeezlekan@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "@angular/core": "^8.1.2",
+    "@angular/core": "^10.2.5",
     "@angular/router": "^8.1.2"
   }
 }
